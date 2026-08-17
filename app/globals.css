@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+/* ---- tokens do design: viram utilitários do Tailwind ---- */
+@theme {
+  --color-papel: #f6f0e5;
+  --color-papel-2: #efe6d6;
+  --color-pistache: #c6d2a9;
+  --color-pistache-2: #8b9a6a;
+  --color-curcuma: #e8a02b;
+  --color-beterraba: #4e1b2e;
+  --color-beterraba-2: #6b2740;
+  --color-oliva: #6d7a50;
+  --color-tinta: #241d1a;
+
+  --font-display: var(--fonte-display), ui-sans-serif, system-ui, sans-serif;
+  --font-corpo: var(--fonte-corpo), ui-sans-serif, system-ui, sans-serif;
+  --font-editorial: var(--fonte-editorial), Georgia, serif;
+
+  /* escala fluida: um passo só do celular ao desktop */
+  --text-t1: clamp(2.35rem, 8.5vw, 4.6rem);
+  --text-t1--line-height: 1.02;
+  --text-t1--letter-spacing: -0.035em;
+  --text-t2: clamp(1.85rem, 6vw, 3.1rem);
+  --text-t2--line-height: 1.05;
+  --text-t2--letter-spacing: -0.03em;
+  --text-t3: clamp(1.1rem, 3.4vw, 1.4rem);
+  --text-t3--line-height: 1.18;
+  --text-t3--letter-spacing: -0.02em;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* compensa o header fixo (64-72px) + respiro visual. As seções (exceto
+       Método) só têm padding embaixo — contam com a seção anterior pro espaço
+       de cima, que some quando se pula direto por âncora. Sem esse respiro
+       extra, o conteúdo fica colado no header ao navegar pelo menu. */
+    scroll-padding-top: 6.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--color-papel);
+    color: var(--color-tinta);
+    font-family: var(--font-corpo);
+    -webkit-font-smoothing: antialiased;
+    /* trava o scroll horizontal no celular */
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 800;
+  }
+
+  :focus-visible {
+    outline: 2.5px solid var(--color-beterraba);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* campos do formulário não podem disparar zoom no iOS: mínimo 16px */
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes desliza {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.faixa-anima {
+  animation: desliza 34s linear infinite;
+}
