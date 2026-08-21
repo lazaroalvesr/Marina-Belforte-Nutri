@@ -4,12 +4,12 @@ import { Container, Sobrancelha } from "@/components/ui";
 import { postDestaque, posts, SITE_URL } from "@/lib/conteudo";
 
 export const metadata: Metadata = {
-  title: "Blog · Marina Belfort",
+  title: "Blog · Equilíbrio Nutrição",
   description:
     "Textos sobre comportamento alimentar, rotina e mitos da nutrição — escritos para quem já é paciente e para quem está pensando em agendar.",
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "Blog · Marina Belfort",
+    title: "Blog · Equilíbrio Nutrição",
     description: "Textos sobre comportamento alimentar, rotina e mitos da nutrição.",
     url: `${SITE_URL}/blog`,
     type: "website",

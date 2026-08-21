@@ -1,9 +1,9 @@
 export const clinica = {
-  nome: "Marina Belfort",
+  nome: "Equilíbrio Nutrição",
   especialidade: "Nutrição comportamental",
   crn: "CRN-9 12.345",
   telefone: "(31) 3000-0000",
-  email: "ola@marinabelfort.com.br",
+  email: "ola@equilibrionutricao.com.br",
   endereco: "Rua da Bahia, 1000 · Lourdes",
   cidade: "Belo Horizonte, MG",
   horario: "Terça a sexta, 8h às 18h",
@@ -16,7 +16,7 @@ export function linkWhatsapp(mensagem: string) {
 
 /* Domínio presumido a partir do e-mail de contato — confirmar o domínio real
    antes de publicar. */
-export const SITE_URL = "https://marinabelfort.com.br";
+export const SITE_URL = "https://equilibrionutricao.com.br";
 
 /* Schema.org da clínica, reaproveitando os mesmos dados exibidos no rodapé
    (mesmo NAP em todo lugar). Sem geo/priceRange: são dados que não existem em
@@ -27,7 +27,7 @@ export const schemaNegocio = {
   "@type": "MedicalBusiness",
   name: clinica.nome,
   description: `${clinica.especialidade}. Atendimento online e em ${clinica.cidade}.`,
-  image: `${SITE_URL}/marina.jpg`,
+  image: `${SITE_URL}/foto-nutricionista.jpg`,
   url: SITE_URL,
   telephone: "+553130000000",
   email: clinica.email,

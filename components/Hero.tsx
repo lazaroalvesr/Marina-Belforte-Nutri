@@ -58,7 +58,7 @@ export default function Hero() {
             />
 
             <Image
-              src="/marina.jpg"
+              src="/foto-nutricionista.jpg"
               alt={`${clinica.nome}, nutricionista, de jaleco branco e gola alta verde`}
               width={900}
               height={1097}

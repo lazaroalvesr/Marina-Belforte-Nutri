@@ -1,4 +1,4 @@
-# Marina Belfort — landing page
+# Equilíbrio Nutrição — landing page
 
 Site fictício de nutricionista. Next.js 15 (App Router) + Tailwind CSS v4 + TypeScript.
 
@@ -36,7 +36,7 @@ components/
 lib/
   conteudo.ts     todo o texto do site
 public/
-  marina.jpg      foto do hero
+  foto-nutricionista.jpg      foto do hero
 ```
 
 Só cinco componentes são client. O resto renderiza no servidor.
@@ -64,6 +64,6 @@ Quase tudo vive em `lib/conteudo.ts`. Para ligar o formulário de verdade, troqu
 
 ## Foto
 
-`public/marina.jpg` é uma imagem do Pexels de uma pessoa real, já recortada e tratada.
+`public/foto-nutricionista.jpg` é uma imagem do Pexels de uma pessoa real, já recortada e tratada.
 Antes de publicar, substitua pela foto da própria profissional ou confirme a licença — uso
 comercial é permitido, mas não para sugerir que a pessoa endossa o serviço.

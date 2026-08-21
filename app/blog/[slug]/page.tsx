@@ -18,7 +18,7 @@ export async function generateMetadata({
   if (slug !== postDestaque.slug) return {};
 
   return {
-    title: `${postDestaque.titulo} · Marina Belfort`,
+    title: `${postDestaque.titulo} · Equilíbrio Nutrição`,
     description: postDestaque.resumo,
     alternates: { canonical: `/blog/${postDestaque.slug}` },
     openGraph: {

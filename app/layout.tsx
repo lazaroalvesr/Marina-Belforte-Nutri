@@ -30,23 +30,23 @@ const editorial = Newsreader({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Marina Belfort · Nutrição comportamental em Belo Horizonte",
+  title: "Equilíbrio Nutrição · Nutrição comportamental em Belo Horizonte",
   description:
     "Acompanhamento nutricional sem dieta de gaveta e sem lista de proibidos. Consulta online e presencial em Belo Horizonte.",
   openGraph: {
-    title: "Marina Belfort · Nutrição comportamental",
+    title: "Equilíbrio Nutrição · Nutrição comportamental",
     description: "Acompanhamento sem dieta de gaveta e sem lista de proibidos.",
     url: SITE_URL,
-    siteName: "Marina Belfort",
-    images: ["/marina.jpg"],
+    siteName: "Equilíbrio Nutrição",
+    images: ["/foto-nutricionista.jpg"],
     locale: "pt_BR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marina Belfort · Nutrição comportamental",
+    title: "Equilíbrio Nutrição · Nutrição comportamental",
     description: "Acompanhamento sem dieta de gaveta e sem lista de proibidos.",
-    images: ["/marina.jpg"],
+    images: ["/foto-nutricionista.jpg"],
   },
 };
 
